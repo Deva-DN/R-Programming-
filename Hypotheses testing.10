@@ -1,0 +1,16 @@
+x <- sample(c(1:100),size=20,replace=TRUE)
+y <- sample(c(1:100),size=20,replace=TRUE)
+ t1<- c("value of variable x")
+t1 
+x
+t2<- c("value of variable y") 
+y
+t3<-c("t test ") 
+t3
+t.test(x,y)
+t4<-c("Correlation between x and y") 
+t4
+cor(x,y)
+t5<-c("covarience")
+ t5
+cov(x,y)
