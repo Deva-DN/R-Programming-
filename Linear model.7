@@ -1,0 +1,20 @@
+setwd("E:\\Sample")
+getwd()
+sample1 = read.csv("k3.csv")
+data <- read.csv("k3.csv")
+head(sample1)
+# Create a data frame.
+
+# Get the max salary from data frame.
+store_name<-data$store
+store_name
+car_sales <-data$sales
+car_sales
+store_advt<-data$advt_cost
+store_advt
+data<-data.frame(store_name,car_sales,store_advt)
+data
+scatter.smooth(x=data$car_sales,y=data$store_advt, xlab = "car sales",ylab = "advertisement cost", main="car sales - advertisementcost")
+Linear_model <- lm(car_sales~store_advt,data = sample1)
+print(Linear_model)
+summary(Linear_model)
